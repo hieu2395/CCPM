@@ -28,9 +28,21 @@
 	<script type="text/javascript">
         $(document).ready(function(){
             $("input[type=button]").click(function(){
-                $("#sampleTable").append("<tr><td><select><option>Email</option><option>Phone</option></select><td><input type=text ></td></td><td>Comments</td><td><input type=text ></td></tr>")
+                $("#sampleTable").append("<tr><td><select><option>Email</option><option>Phone</option></select><td><input type='text' ></td></td><td>Comments</td><td><input type='text' ></td></tr>")
             });
         });
+    </script>
+	
+	
+	bai 2
+	<script type="text/javascript">
+        $(document).ready(function(){
+			 $("#sub2").click(function(){
+					$('.myclass').css("color","red");
+            });
+		});
+          
+
     </script>
 
 </head>
@@ -42,13 +54,16 @@
         </div>
     </form>
 	
-	<h1>Add Solution</h1>
-	<p>
-		First Pagraph
-	</p>
-	<p>
-		Second Pragraph
-	</p>
+	<div class="myclass">
+		<h1>Add Solution</h1>
+		<p>
+			First Pagraph
+		</p>
+		<p>
+			Second Pragraph
+		</p>
+	</div>
+    <input type="button" value="Submit" id="sub2">
 	
 	<div>
 		<table id="sampleTable" border="1">
@@ -59,14 +74,14 @@
 				<option>Phone</option>
 			</select>
 			<td>
-				<input type=text >
+				<input type="text" >
 			</td>
 			</td>
             <td>
 				Comments
             </td>
 			<td>
-				<input type=text >
+				<input type="text" >
 			</td>
         </tr>
     </table>
