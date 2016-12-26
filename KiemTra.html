@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--bai 1-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('#text').css('background-color', 'yellow');
+                return false;
+            });
+        });
+
+    </script>
+	
+	<!-- bai 2 -->
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(body).append("<div></div>");
+        });
+		$("div").css("color","red");
+
+    </script>
+	
+	<!-- bai 4 -->
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $("input[type=button]").click(function(){
+                $("#sampleTable").append("<tr><td><select><option>Email</option><option>Phone</option></select><td><input type=text ></td></td><td>Comments</td><td><input type=text ></td></tr>")
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <p id="text">TEXT</p>
+        <div>
+            <button>Click Me</button>
+        </div>
+    </form>
+	
+	<h1>Add Solution</h1>
+	<p>
+		First Pagraph
+	</p>
+	<p>
+		Second Pragraph
+	</p>
+	
+	<div>
+		<table id="sampleTable" border="1">
+        <tr>
+            <td>
+			<select>
+				<option>Email</option>
+				<option>Phone</option>
+			</select>
+			<td>
+				<input type=text >
+			</td>
+			</td>
+            <td>
+				Comments
+            </td>
+			<td>
+				<input type=text >
+			</td>
+        </tr>
+    </table>
+    <br />
+    <input type="button" onclick="" value="Insert Row" />
+	</div>
+	
+</body>
+</html>
